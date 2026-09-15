@@ -1,0 +1,89 @@
+# Tests
+
+## Test 1 - Creator promotion studio and attribution [sanity]
+Viewport: desktop (1280x800)
+Covers: creator marketplace, showcase, promotion studio, original-shop attribution
+Description: Verifies a creator can promote a product and create a shareable attributed promotion.
+Steps:
+1. Sign in as a Creator account
+2. Open Creator Marketplace and select Promote product
+3. Open Create promo card from My Showcase
+4. Verify the preview shows the original product image, shop name, price, SHOP NOW and marketplace path
+5. Copy the trackable affiliate link
+Expected: The product appears in My Showcase, the promotion studio opens, and an attributed link is copied that sends customers to the original product page.
+
+## Test 2 - Business affiliate controls
+Viewport: desktop (1280x800)
+Covers: business affiliate program, creator eligibility, commission visibility
+Description: Verifies the business Seller Center exposes creator affiliate controls.
+Steps:
+1. Sign in as a Business account
+2. Open Seller Center and select Affiliate
+3. Verify creator eligibility and commission settings are visible
+4. Save affiliate settings
+Expected: Affiliate settings are visible and the save action confirms the configuration.
+
+## Test 3 - Mobile creator sharing
+Viewport: mobile (375x667)
+Covers: responsive creator promotion, share-link fallback, visible attribution
+Description: Verifies the promotion studio remains usable on mobile and explains the separate trackable link.
+Steps:
+1. Open Creator Marketplace on mobile and promote a product
+2. Open Create promo card
+3. Verify the card shows the original shop, price, SHOP NOW and marketplace path
+4. Copy the trackable link
+Expected: The creator can copy an attributed link and the customer destination remains the original product page.
+
+## Test 1 - Creator account stays creator-only and opens a clean creator workspace [sanity]
+Viewport: desktop
+Covers: role persistence, creator-only account dashboard, creator dashboard navigation, removal of cross-role conversion options
+Description: Verifies a creator account opens a focused creator experience rather than showing buyer/business role conversion cards.
+Steps:
+1. Sign in using a Creator account
+2. Open Account
+3. Open Creator Marketplace from the creator dashboard
+Expected: Account shows Creator status, creator earnings/showcase tools, and no Become a Business, Sell on Marketplace, or Become a Customer actions.
+
+## Test 2 - Creator adds a product to Showcase and shares the original-shop attribution link
+Viewport: mobile
+Covers: creator product promotion, creator showcase, original business ownership, affiliate attribution link, product deep link
+Description: Verifies promoted products appear on the creator dashboard and the share action generates a link containing the product and creator attribution while landing on the original marketplace product page.
+Steps:
+1. Open Creator Marketplace
+2. Select a verified product and tap Promote product
+3. Open Account and view Products I'm promoting
+4. Tap Share original-shop link
+5. Open the generated link
+Expected: The product appears in the creator showcase, the card identifies the original business as seller, and the shared URL contains product and creator attribution and opens that original product page.
+
+## Test 3 - Business account stays business-only with a professional seller workspace
+Viewport: desktop
+Covers: business role persistence, business-only account dashboard, seller dashboard access, catalog/order/creator marketing navigation
+Description: Verifies a business account does not expose buyer or creator conversion prompts and can enter its focused seller workspace.
+Steps:
+1. Sign in using a Business account
+2. Open Account
+3. Review the dashboard actions
+4. Open Business Dashboard
+Expected: Account shows Business status and only business tools such as sales, products, orders, creator marketing and trust/security; buyer/creator conversion options are absent.
+
+## Test 4 - Buyer account stays buyer-only with shopping tools
+Viewport: mobile
+Covers: buyer role persistence, buyer-only account dashboard, orders, wishlist, marketplace discovery
+Description: Verifies a customer sees a clean shopping account without seller or creator onboarding prompts.
+Steps:
+1. Sign in using a Customer account
+2. Open Account
+3. Tap My Orders, Wishlist, Discover Products and Account Settings as available
+Expected: Buyer dashboard contains shopping/account tools only and does not show Become a Business, Sell on Marketplace, or Become a Creator.
+
+## Test 5 - Creator can promote and unpromote products without changing merchant ownership
+Viewport: desktop
+Covers: promotion toggle, original seller labeling, creator commission display, merchant ownership boundary
+Description: Verifies creator promotion changes the creator showcase state while the product continues to identify the original verified business.
+Steps:
+1. Open Creator Marketplace
+2. Promote a product
+3. Verify the product shows the merchant name and commission
+4. Tap the promotion button again
+Expected: The product is added to the showcase, continues to show the original seller, and can be removed from the creator's promotions without changing the merchant listing.

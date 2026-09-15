@@ -1,0 +1,6 @@
+{
+  "name": "TikTok Marketplace Kenya",
+  "description": "Kenyan social commerce marketplace for shopping, verified businesses, and creator affiliate programs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
